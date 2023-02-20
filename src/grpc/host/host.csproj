@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>grpc</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="1.1.1" />
+      <PackageReference Include="protobuf-net.Grpc.AspNetCore.Reflection" Version="1.1.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\contracts\contracts.csproj" />
+      <ProjectReference Include="..\..\service-impl\service-impl.csproj" />
+    </ItemGroup>
+</Project>
