@@ -8,12 +8,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="1.1.1" />
-      <PackageReference Include="protobuf-net.Grpc.AspNetCore.Reflection" Version="1.1.1" />
+        <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="1.1.1" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\..\contracts\contracts.csproj" />
       <ProjectReference Include="..\..\service-impl\service-impl.csproj" />
+      <ProjectReference Include="..\..\service\service.csproj" />
     </ItemGroup>
 </Project>
