@@ -1,11 +1,10 @@
 using System.ServiceModel;
 
-namespace Service
+namespace Service;
+
+[ServiceContract]
+public interface IGreeter
 {
-    [ServiceContract]
-    public interface IGreeter
-    {
-        [OperationContract]
-        public GreeterResponse Greet(GreetRequest request);
-    }
+    [OperationContract]
+    public GreeterResponse Greet(GreetRequest request);
 }

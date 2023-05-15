@@ -1,8 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using Grpc.Net.Client;
+﻿using Grpc.Net.Client;
 using ProtoBuf.Grpc.Client;
 using Service;
+
+Console.WriteLine("Press enter to start");
+Console.ReadLine();
 
 using var channel = GrpcChannel.ForAddress("https://localhost:7199");
 var client = channel.CreateGrpcService<IGreeter>();
