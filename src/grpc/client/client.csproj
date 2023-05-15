@@ -9,6 +9,7 @@
 
     <ItemGroup>
         <PackageReference Include="Grpc.Net.Client" Version="2.51.0" />
+        <PackageReference Include="IdentityModel" Version="6.1.0" />
         <PackageReference Include="protobuf-net.Grpc" Version="1.1.1" />
     </ItemGroup>
 
