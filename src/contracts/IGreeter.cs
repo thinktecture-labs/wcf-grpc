@@ -1,4 +1,5 @@
 using System.ServiceModel;
+using ProtoBuf.Grpc;
 
 namespace Service;
 
@@ -6,5 +7,5 @@ namespace Service;
 public interface IGreeter
 {
     [OperationContract]
-    public GreeterResponse Greet(GreetRequest request);
+    public GreeterResponse Greet(GreetRequest request, CallContext context = default);
 }

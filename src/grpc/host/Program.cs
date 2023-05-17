@@ -4,7 +4,11 @@ using Service;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services
-    .AddCodeFirstGrpc(options => options.Interceptors.Add<LoggingInterceptor>());
+    .AddCodeFirstGrpc(options =>
+    {
+        options.Interceptors.Add<LoggingInterceptor>();
+        options.Interceptors.Add<UserInterceptor>();
+    });
 
 builder.Services
     .AddAuthentication()
